@@ -8,6 +8,10 @@ let triStar = function(starCount){
 
 triStar(starCount)
 
-// for(let stars = 1; stars <= count; stars++){} temporarily 
+// for(let stars = 1; stars <= count; stars++){
+//     console.log('*')
+// } 
+// console.log('\n')
+// Temporarily
 // having issue solving the problem using double for loops
 // the recurring stars are not printing horizontally but rather vcertically.

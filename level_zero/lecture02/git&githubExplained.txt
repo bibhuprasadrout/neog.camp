@@ -1,0 +1,87 @@
+git
+
+git is what you call a version control software. It is basically like writing a diary in 
+layman terms. You will record all information of importance at regular intervals or 
+irregular, when ever you find it relevent.It helps you understand the changes you are 
+going through and the changes that is happening to you.
+
+Similarlly git helps to keep/log records of the software as it is being developed/growing.
+It helps the developer understand the changes that the software is undergoing at relevent
+intervals. If needed be the developer has access to all past versions of the software 
+simultaniously. It is like having access to your 10 year self, 14 year self, 20 year 
+self all at the same time. You can clearly understand where your are comming from and how 
+changes are influencing you in your life.
+
+git make the life/work of a software developer a smoother sailing.
+
+github
+
+github is where a developer can create remote repositories. git does keep a record of 
+everything but it is only limited to the local system. When we push our work logged in git 
+to github, we have a copy of our work saved online in what is called as remote repositories. 
+We can access these remote repositories from any where at any time using any device. We can 
+then continue our work from where we left off. We can also share our work, colaborate with 
+other developers to work on a common project, showcase our best work to the public.
+
+
+|-----------------------------------------------------------------------------------------|
+
+How does git and github work
+
+Go to the main/root directory of project you are working on. Open gitBash in that location.
+gitBash is a CLI that is installed automatically while installing git in the local system.
+Type the following into the CLI-
+
+git init    // This code will initiate a local repository in that 
+               location/root directory of the project.
+
+git add .   // This code will add all the files and sub-files in the directory to the 
+               staging area. The developer can still make changes and add thoses changes 
+               to the staging area without having an impression/imprint of any mistake or 
+               incomplete messy code. Once the developer is satisfied with their work and 
+               would to like to have a safepoint/savepoint, they continue to commit.
+
+git commit -m 'commit message/discriptive message'
+            //  When the developer commits a change , they basically create a savepoint,
+                which they can comeback to salvage the good code if they mess up in the 
+                future or completely went offtrack or want to work on a different feature.
+
+Now go to github website create a new repository preferably with the same name as the 
+local repository. You will be provided with a github-url ( it couls be https or ssh 
+according to your choice). Copy that github-url.
+
+Now back at the gitBash CLI
+
+git remote add origin github-url    // This is to replace the long github-url with short 
+                                       name for the remote repo, origin in this case.
+
+git push origin master/main //  This will push the project to the remote repo, repo as in 
+                                repository.
+
+Thus everytime you make changes and are satisfies with the code to create a savepoint,
+again add -> commit -> push.
+
+Upto this are the basics of git and github.
+
+Beyound this git and github have features like creating branches,
+checkout, reverting, reseting, pulling, forking etc.
+            
+|-----------------------------------------------------------------------------------------|
+
+commit messages
+
+There is a convention/unwritten rule about how to write proper commit messages.
+Always make sure to write commit messages that are short and discrptive.
+Use words/lingo such as-
+
+            feat - a new feature
+            fix - a bug fix
+            docs - changes in documentation
+            style - everything related to styling
+            refactor - code changes that neither fixes a bug or adds a feature
+            test - everything related to testing
+            chore - updating build tasks, package manager configs, etc
+
+example of a good commit message would be-
+
+            'fix: fixed bug in timer()'

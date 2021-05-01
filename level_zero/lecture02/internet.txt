@@ -1,0 +1,19 @@
+how does the internet work
+
+The internet is a global network of computers. Each computer has an unique ip code/address. These computers 
+talk/intract to eachother using TCP/IP protocols.A web browser is an application used to request websites and webpages. 
+Websites and webpages are files stopred in computers that run a software called the web server. HTTP is an application 
+level protocol. HTTP is hypertext transfer protocol, which handles the traffic between web browsers and web servers.
+
+Websites need to be hosted, can then only will they be accessable to the public. They also need a domain name, which is 
+usually a simple to understand readable name used to identyify the website. domain name are required to replace long 
+chunks of alphanumerals.
+
+When ever a user requests a wesite using its domain name from the browser, the broser basically requests the ip address 
+of the website from the DNS server using the domain name. It then uses this ip address to request data from the servers. 
+When data is received, it is rendered by the browser and displayed to the user.
+
+Here the DNS is Domain Name Service, the browser is the client and the data requested from the servers are basically html,
+css and javascript files.
+
+This has been a very simple and brief explanation.

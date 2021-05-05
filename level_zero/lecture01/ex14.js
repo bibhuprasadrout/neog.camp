@@ -16,6 +16,8 @@
 //     mothersName:'Martha'
 // }
 
+// This code will ask questions and expect the right answers.
+
 let superHeroFanTest 
 let q1 = {
     question:'Who is Batman? ',
@@ -81,9 +83,9 @@ let readlinesync = require('readline-sync')
 let answerRight = 0
 
 
-function test(qNumber, index, superHeroFanTest){
-    let userAnswer = readlinesync.question(superHeroFanTest[index].question)
-    if(userAnswer===superHeroFanTest[index].answer){
+function test(qNumber){
+    let userAnswer = readlinesync.question(qNumber.question)
+    if(userAnswer===qNumber.answer){
         answerRight += 1
     }
 }

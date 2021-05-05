@@ -54,9 +54,9 @@ let readlinesync = require('readline-sync')
 let answerRight = 0
 
 
-function test(qNumber, index, superHeroFanTest){
-    let userAnswer = readlinesync.question(superHeroFanTest[index].question)
-    if(userAnswer===superHeroFanTest[index].answer){
+function test(qNumber){
+    let userAnswer = readlinesync.question(qNumber.question)
+    if(userAnswer===qNumber.answer){
         answerRight += 1
     }
 }
@@ -68,17 +68,12 @@ if(answerRight<12){
     console.log('       ')
     let answerKey = []
     
-    function answer(qNumber, index, superHeroFanTest){
-        answerKey[index] = superHeroFanTest[index].answer
-    }
-    superHeroFanTest.forEach(answer)
-    
-    
-    function listAnswer(qNumber, index, superHeroFanTest){
+    function answer(qNumber,index){
+        answerKey[index] = qNumber.answer
         console.log(index+1 + '.' + answerKey[index])
     }
     console.log('The answers to the above questions are')
-    superHeroFanTest.forEach(listAnswer)
+    superHeroFanTest.forEach(answer)
     console.log('       ')
 }else{
     console.log(`you got ${answerRight} right answer...My Man!!!`)

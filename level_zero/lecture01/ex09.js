@@ -1,3 +1,4 @@
+// The code will your name, the number of times you want it print.
 let readlineSync = require('readline-sync')
 let userName = readlineSync.question('Enter your name:')
 let printCount = readlineSync.question('Enter number of copy:')

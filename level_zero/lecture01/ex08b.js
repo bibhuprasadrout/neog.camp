@@ -9,7 +9,7 @@ let kbc = function(question, answer){
 }
 
 kbc('1 + 1 is:', '2')
-kbc('3 - 1 is:', '1')
+kbc('3 - 1 is:', '2')
 kbc('2 + 2 is:', '4')
 
 console.log(`your have got ${score} right answers`)

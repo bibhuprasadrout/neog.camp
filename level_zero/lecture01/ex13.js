@@ -20,11 +20,11 @@
 let superHeroFanTest 
 let q1 = {
     question:'Who is Batman?',
-    answer:'bruce waine'
+    answer:'bruce wayne'
 }
 let q2 = {
     question:'Who is Superman?',
-    answer:'clak kent'
+    answer:'clark kent'
 }
 let q3 = {
     question:'batmans superpower is...',
@@ -77,11 +77,11 @@ for(let count = 0; count < superHeroFanTest.length; count++){
 let superHeroFanExam = [
     q1 = {
         question:'Who is Batman?',
-        answer:'bruce waine'
+        answer:'bruce wayne'
     },
     q2 = {
         question:'Who is Superman?',
-        answer:'clak kent'
+        answer:'clark kent'
     },
     q3 = {
         question:'batmans superpower is...',

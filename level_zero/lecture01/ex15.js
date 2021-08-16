@@ -1,66 +1,63 @@
-let superHeroFanTest 
 let q1 = {
     question:'Who is Batman? ',
-    answer:'bruce waine '
+    answer:'bruce wayne'
 }
 let q2 = {
     question:'Who is Superman? ',
-    answer:'clak kent '
+    answer:'clark kent'
 }
 let q3 = {
     question:'batmans superpower is... ',
-    answer:'money '
+    answer:'money'
 }
 let q4 = {
     question:'supermans superpower is: ',
-    answer:'superpower...haha...super everything '
+    answer:'superpower...haha...super everything'
 }
 let q5 = {
     question:'batman protects the city of: ',
-    answer:'gotham '
+    answer:'gotham'
 }
 let q6 = {
     question:'superman protects the city of: ',
-    answer:'metropolis '
+    answer:'metropolis'
 }
 let q7 = {
     question:'number of batman girlfriends: ',
-    answer:'unknown '
+    answer:'unknown'
 }
 let q8 = {
     question:'superman protects: ',
-    answer:'loise lane '
+    answer:'loise lane'
 }
 let q9 = {
     question:'batmans mom is: ',
-    answer:'martha '
+    answer:'martha'
 }
 let q10 = {
     question:'supermans mom is: ',
-    answer:'martha '
+    answer:'martha'
 }
 let q11 = {
     question:'Batman is: ',
-    answer:'worlds greatest detective '
+    answer:'worlds greatest detective'
 }
 let q12 = {
     question:'supermans is: ',
-    answer:'a jounalist '
+    answer:'a jounalist'
 }
 
-superHeroFanTest = [q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11,q12]
+let superHeroFanTest = [q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11,q12]
 
 let readlinesync = require('readline-sync')
 let answerRight = 0
 
-
-function test(qNumber){
+superHeroFanTest.forEach(function test(qNumber){
     let userAnswer = readlinesync.question(qNumber.question)
-    if(userAnswer===qNumber.answer){
-        answerRight += 1
+    if(userAnswer === qNumber.answer){
+        answerRight++
     }
-}
-superHeroFanTest.forEach(test)
+})
 console.log('       ')
 
 if(answerRight<12){
@@ -79,5 +76,3 @@ if(answerRight<12){
     console.log(`you got ${answerRight} right answer...My Man!!!`)
     console.log('       ')
 }
-
-

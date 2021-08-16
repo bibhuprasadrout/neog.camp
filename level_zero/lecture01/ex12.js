@@ -1,6 +1,6 @@
 // Batman V Superman
 let Batman = {
-    'name':'Bruce waine',
+    'name':'Bruce wayne',
     'occupation':'detective',
     'superPower':'money',
     'city':'Gotham',

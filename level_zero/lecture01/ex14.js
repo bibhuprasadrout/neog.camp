@@ -17,15 +17,14 @@
 // }
 
 // This code will ask questions and expect the right answers.
-
-let superHeroFanTest 
+ 
 let q1 = {
     question:'Who is Batman? ',
-    answer:'bruce waine'
+    answer:'bruce wayne'
 }
 let q2 = {
     question:'Who is Superman? ',
-    answer:'clak kent'
+    answer:'clark kent'
 }
 let q3 = {
     question:'batmans superpower is... ',
@@ -68,30 +67,22 @@ let q12 = {
     answer:'a jounalist'
 }
 
-superHeroFanTest = [q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11,q12]
-
-// 'for' and 'foreach' performing the same task...
-// for(let count = 0; count < superHeroFanTest.length; count++){
-//     console.log(superHeroFanTest[count].question)
-// }
-// function question(qNumber, index, superHeroFanTest){
-//     console.log(superHeroFanTest[index].question)
-// }
-// superHeroFanTest.forEach(question)
+let superHeroFanTest = [q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11,q12]
 
 let readlinesync = require('readline-sync')
 let answerRight = 0
 
 
-function test(qNumber){
-    let userAnswer = readlinesync.question(qNumber.question)
-    if(userAnswer===qNumber.answer){
-        answerRight += 1
-    }
-}
-superHeroFanTest.forEach(test)
 
-if(answerRight<12){
+
+superHeroFanTest.forEach(function test(qNumber) {
+    let userAnswer = readlinesync.question(qNumber.question)
+    if(userAnswer === qNumber.answer){
+        answerRight++
+    }
+})
+
+if(answerRight<12) {
     console.log(`you got ${answerRight} right answer...go read more comics.`)
 }else{
     console.log(`you got ${answerRight} right answer...My Man!!!`)

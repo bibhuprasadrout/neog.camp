@@ -12,7 +12,6 @@ body{
   background-size: cover;
   background-position: top;
   background-position-y: 17%;
-  overflow: hidden;
 }
 a{
   text-decoration: none;

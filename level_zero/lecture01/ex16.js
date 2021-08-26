@@ -74,6 +74,7 @@ let q12 = {
 let superHeroFanTest = [q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11,q12]
 
 let readlinesync = require('readline-sync')
+let dcFan = readlineSync.question('Enter your name:')
 let answerRight = 0
 
 superHeroFanTest.forEach(function test(qNumber){
@@ -96,10 +97,10 @@ if(answerRight<12){
       console.log(index+1 + '.' + question[index])
       console.log(' ' + answerKey[index])
   }
-  console.log('The answers to the above questions are')
+  console.log(`Hi ${dcFan}, The answers to the above questions are`)
   superHeroFanTest.forEach(answer)
   console.log('       ')
 }else{
-  console.log(`you got ${answerRight} right answer...My Man!!!`)
+  console.log(`Hi ${dcFan}, you got ${answerRight} right answer...My Man!!!`)
   console.log('       ')
 }
